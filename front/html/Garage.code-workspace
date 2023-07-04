@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../Garage"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Garage",
+		"liveServer.settings.port": 5501
+	}
+}

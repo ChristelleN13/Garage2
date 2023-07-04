@@ -16,55 +16,62 @@
 </header>
 <body>     
     <form action="POST" class="container form">
-        <div class="row justify-content-center">       
-            <h1>Formulaire d'inscription</h1> 
-        </div>   
-        <div class="row justify-content-betweens m-0">
+        <h1 class="text-center mb-4">Formulaire d'inscription</h1>
+        <div class="row justify-content-between m-0">
             <div class="col-md-6 col-sm-12 form-group row m-0 p-0 mb-4">
-                <label for="name" class="col-sm-3 col-md-2 p-0 "><span class="input-group-text" id="inputGroup-sm">Nom</span></label>
-                <input type="text" class="col-sm-9 col-md-10" id="name" placeholder="Votre nom (obligatoire)"
+                <label for="name" class="col-sm-4 col-md-3 p-0"><span class="input-group-text" id="inputGroup-sm">Nom</span></label>
+                <div class="col-sm-8 col-md-9 pr-0">
+                <input type="text" class="w-100 h-100 input-group-text" id="name" placeholder="Votre nom (obligatoire)"
                     required>
+                </div>
             </div>
-            <div class="col-md-6 col-sm-12 form-group row m-0 p-0 mb-4">  
-                <label for="prenom" class="col-sm-3 col-md-2 p-0"><span class="input-group-text" id="inputGroup-sm">Prénom</span></label>
-                <input type="text" class="col-9" id="prenom" placeholder="Votre prénom">
+            <div class="col-md-6 col-sm-12 form-group row m-0 pr-sm-0 p-0 mb-4">  
+                <label for="prenom" class="col-sm-4 col-md-3 p-0"><span class="input-group-text" id="inputGroup-sm">Prénom</span></label>
+                <div class="col-sm-8 col-md-9 pr-0">
+                    <input type="text" class="w-100 h-100 input-group-text" id="prenom" placeholder="Votre prénom">
+                </div>
             </div>
         </div>
-        <div class="col-md-6 col-sm-12 form-group row m-0 p-0 mb-4">
-            <label for="email"  class="input-group-prepend"><span class="input-group-text" id="inputGroup-sm">Email</span></label>
-            <input type="email" class="form-control col-form-label input-group-text" id="email" placeholder="Votre adresse email (obligatoire)"
-                required>
+        <div class="form-group row m-0 mb-4">
+            <label for="email"  class="col-sm-4 col-md-3 p-0"><span class="input-group-text" id="inputGroup-sm">Email</span></label>
+            <div class="col-sm-8 col-md-9 pr-0">
+            <input type="email" class="w-100 h-100 input-group-text" id="email" placeholder="Votre adresse email (obligatoire)" required>
+            </div>
         </div>
-        <div class="col-md-6 col-sm-12 form-group row m-0 p-0 mb-4">
-        <label for="start" class="input-group-prepend"><span class="input-group-text" id="inputGroup-sm">Date de naissance</span></label>
-        <input type="date" class="form-control col-form-label input-group-text" id="start" name="trip-start"
+        <div class="form-group row m-0 mb-4">
+        <label for="start" class="col-sm-4 col-md-3 p-0"><span class="input-group-text" id="inputGroup-sm">Date de naissance</span></label>
+        <div class="col-sm-8 col-md-9 pr-0">
+        <input type="date" class="w-100 h-100 input-group-text"  id="start" name="trip-start"
         value="2018-07-22"
-        min="1930-01-01" max="2023-12-31">
+        min="1930-01-01" max="2023-12-31"></div>
         </div>
-        <div class="d-flex input-group">
-            <label for="mobile"><span class="input-group-text" id="inputGroup-sm">Contact</span></label>
-        <input class="form-control col-form-label input-group-text" name="tel1" type="tel" pattern="[0-9]{2}" placeholder="##" aria-label="2-digit area code" size="1"/>-
-        <input class="form-control col-form-label input-group-text" name="tel1" type="tel" pattern="[0-9]{2}" placeholder="##" aria-label="2-digit area code" size="1"/>-
-        <input class="form-control col-form-label input-group-text" name="tel1" type="tel" pattern="[0-9]{2}" placeholder="##" aria-label="2-digit area code" size="1"/>-
-        <input class="form-control col-form-label input-group-text" name="tel1" type="tel" pattern="[0-9]{2}" placeholder="##" aria-label="2-digit area code" size="1"/>-
-        <input class="form-control col-form-label input-group-text" name="tel1" type="tel" pattern="[0-9]{2}" placeholder="##" aria-label="2-digit area code" size="1"/>
+        <div class="form-group row m-0 mb-4">
+            <label class="col-sm-4 col-md-3 p-0" for="mobile"><span class="input-group-text" id="inputGroup-sm">Contact</span></label>
+            <div class="col-sm-8 col-md-9 d-flex pr-0">
+                <input class="form-control col-form-label input-group-text" name="tel1" type="tel" pattern="[0-9]{2}" placeholder="##" aria-label="2-digit area code" size="1"/>
+                <input class="form-control col-form-label input-group-text" name="tel1" type="tel" pattern="[0-9]{2}" placeholder="##" aria-label="2-digit area code" size="1"/>
+                <input class="form-control col-form-label input-group-text" name="tel1" type="tel" pattern="[0-9]{2}" placeholder="##" aria-label="2-digit area code" size="1"/>
+                <input class="form-control col-form-label input-group-text" name="tel1" type="tel" pattern="[0-9]{2}" placeholder="##" aria-label="2-digit area code" size="1"/>
+                <input class="form-control col-form-label input-group-text" name="tel1" type="tel" pattern="[0-9]{2}" placeholder="##" aria-label="2-digit area code" size="1"/>
+            </div>
+            
         </div>   
     
-        <div class="d-flex input-group">
-            <label for="ville"class="input-group-prepend"><span class="input-group-text" id="inputGroup-sm">Ville</span></label>
+        <div class="form-group row m-0 mb-4">
+            <label for="ville" class="col-sm-4 col-md-3 p-0"><span class="input-group-text" id="inputGroup-sm">Ville</span></label>
+            <div class="col-sm-8 col-md-9 d-flex pr-0">
             <input type="text" class="form-control input-group-text" id="ville" placeholder="Votre ville de domicile" required>
-            <div class="valid-feedback">Ok !</div>
-            <div class="invalid-feedback">Valeur incorrecte</div>
+            </div>
         </div>
-        <div class="d-flex input-group">
-            <label for="cp"class="input-group-prepend"><span class="input-group-text" id="inputGroup-sm">Code postal</span></label>
-            <input type="text" name="postcode" class="form-control  input-group-text" id="cp" pattern="(?:0[1-9]|[1-8]\d|9[0-8])\d{3}" placeholder="Code postal" required>
-            <div class="valid-feedback">Ok !</div>
-            <div class="invalid-feedback">Valeur incorrecte</div>
+        <div class="form-group row m-0 mb-4">
+            <label for="cp" class="col-sm-4 col-md-3 p-0"><span class="input-group-text" id="inputGroup-sm">Code postal</span></label>
+            <div class="col-sm-8 col-md-9 d-flex pr-0">
+                <input type="text" name="postcode" class="form-control  input-group-text" id="cp" pattern="(?:0[1-9]|[1-8]\d|9[0-8])\d{3}" placeholder="Code postal" required>
+            </div>
         </div> 
         </div>
-            <div class="d-flex justify-content-center">            
-                <input class="d-flex" type="submit" value="Valider">
+        <div class="d-flex justify-content-center">  
+            <button type="button" class="btn btn-dark">Valider</button>
         </div>               
     </form>
         </div>
